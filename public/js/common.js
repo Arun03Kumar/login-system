@@ -13,18 +13,18 @@ textArea.addEventListener("keyup", (e) => {
   }
 });
 
-// btn.addEventListener("click", () => {
-//   const data = {
-//     "content": textArea.value,
-//   };
-//   const xhr = new XMLHttpRequest()
-//   xhr.open("POST", "/api/posts")
-//   xhr.setRequestHeader("Content-type", "x-www-form-urlencoded")
+btn.addEventListener("click", () => {
+  const data = {
+    postarea: textArea.value,
+  };
+  const xhr = new XMLHttpRequest()
+  xhr.open("POST", "/api/posts")
+  xhr.setRequestHeader("Content-type", "application/json")
 
-//   xhr.onreadystatechange = function () {
-//     if (this.status == 200) {
+  xhr.onreadystatechange = function () {
+    if (this.status == 200) {
       
-//     }
-//   };
-//   xhr.send("?name=asdf")
-// });
+    }
+  };
+  xhr.send(JSON.stringify(data))
+});

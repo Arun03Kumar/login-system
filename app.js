@@ -5,6 +5,7 @@ const mongoose = require("./database");
 const session = require("express-session")
 
 const app = express();
+app.use(express.json())
 
 // telling the express that we are using pug template engine
 app.set("view engine", "pug");

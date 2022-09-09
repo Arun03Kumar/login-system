@@ -97,12 +97,19 @@ nav a:hover {
     padding-left: var(--spacing);
 }
 
-.textareaContainer form textarea {
+.textareaContainer textarea {
     width: 100%;
     border: none;
     resize: none;
     font-size: 19px;
 }
+
+/* .textareaContainer form textarea {
+    width: 100%;
+    border: none;
+    resize: none;
+    font-size: 19px;
+} */
 
 #submitPostButton {
     background-color: var(--blue);
